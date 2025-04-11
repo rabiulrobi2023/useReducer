@@ -2,6 +2,7 @@ import { createContext, useReducer } from "react";
 
 export const TodoContext = createContext(undefined);
 const initialState = [];
+
 const reducer = (currentState, action) => {
   switch (action.type) {
     case "addTodo":
